@@ -1,0 +1,1 @@
+﻿ Scaffold-DbContext -Connection "Server=127.0.0.1;Database=Blogging;User ID=root;Password=12345678;" -Context "GomoCCDBContext"  -Provider Pomelo.EntityFrameworkCore.MySql -OutputDir "" -Project Gomo.CC.Model  -force -verbose
