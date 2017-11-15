@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Hangfire;
 using Hangfire.MySql.Core;
+using System.Data;
 
 namespace WebApplication1
 {
@@ -25,9 +26,18 @@ namespace WebApplication1
         {
             services.AddMvc();
             string connectionString = "server=127.0.0.1;uid=root;pwd=12345678;database=HandfireDB;Allow User Variables=True";
-
+            MySqlStorageOptions mySqlStorageOptions = new MySqlStorageOptions
+            {
+                TransactionIsolationLevel = IsolationLevel.ReadCommitted,
+                QueuePollInterval = TimeSpan.FromSeconds(15),
+                JobExpirationCheckInterval = TimeSpan.FromHours(1),
+                CountersAggregateInterval = TimeSpan.FromMinutes(5),
+                PrepareSchemaIfNecessary = true,
+                DashboardJobListLimit = 50000,
+                TransactionTimeout = TimeSpan.FromMinutes(1),
+            };
             services.AddHangfire(options => options
-                    .UseStorage(new MySqlStorage(connectionString))
+                    .UseStorage(new MySqlStorage(connectionString, mySqlStorageOptions))
                     .UseColouredConsoleLogProvider());
         }
 
@@ -35,7 +45,11 @@ namespace WebApplication1
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
 
-            app.UseHangfireServer();
+            app.UseHangfireServer(
+                new BackgroundJobServerOptions
+                {
+                    WorkerCount = 1//只准許一個instance
+                });
             app.UseHangfireDashboard();
             if (env.IsDevelopment())
             {
