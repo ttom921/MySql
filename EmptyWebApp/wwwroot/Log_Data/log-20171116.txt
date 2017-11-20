@@ -1,0 +1,37 @@
+2017-11-16 16:51:13.778 +08:00 [Information] Starting web host
+2017-11-16 16:51:15.065 +08:00 [Information] User profile is available. Using '"C:\Users\ttom\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2017-11-16 16:51:16.262 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/  
+2017-11-16 16:51:16.543 +08:00 [Information] Executing action method "EmptyWebApp.Controllers.HomeController.Index (EmptyWebApp)" with arguments (null) - ModelState is Valid
+2017-11-16 16:51:19.377 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2017-11-16 16:51:20.043 +08:00 [Information] Executed action "EmptyWebApp.Controllers.HomeController.Index (EmptyWebApp)" in 3511.6385ms
+2017-11-16 16:51:20.050 +08:00 [Information] Request finished in 3801.7818ms 200 text/html; charset=utf-8
+2017-11-16 16:51:20.074 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/css/site.css  
+2017-11-16 16:51:20.074 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery/dist/jquery.js  
+2017-11-16 16:51:20.075 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/js/site.js?v=7mkNbU1tgQL1bUeZe3j2R151hKLhLDKO4BBaR-iqCy0  
+2017-11-16 16:51:20.074 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/js/bootstrap.js  
+2017-11-16 16:51:20.080 +08:00 [Information] The file "/js/site.js" was not modified
+2017-11-16 16:51:20.080 +08:00 [Information] The file "/lib/jquery/dist/jquery.js" was not modified
+2017-11-16 16:51:20.080 +08:00 [Information] The file "/css/site.css" was not modified
+2017-11-16 16:51:20.080 +08:00 [Information] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified
+2017-11-16 16:51:20.085 +08:00 [Information] Request finished in 11.8277ms 304 application/javascript
+2017-11-16 16:51:20.085 +08:00 [Information] Request finished in 9.2554ms 304 application/javascript
+2017-11-16 16:51:20.098 +08:00 [Information] Request finished in 24.7296ms 304 text/css
+2017-11-16 16:51:20.104 +08:00 [Information] Request finished in 27.9245ms 304 application/javascript
+2017-11-16 16:51:20.154 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/css/bootstrap.css  
+2017-11-16 16:51:20.155 +08:00 [Information] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified
+2017-11-16 16:51:20.156 +08:00 [Information] Request finished in 1.869ms 304 text/css
+2017-11-16 16:51:20.157 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/images/banner1.svg  
+2017-11-16 16:51:20.181 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/images/banner3.svg  
+2017-11-16 16:51:20.159 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/images/banner4.svg  
+2017-11-16 16:51:20.184 +08:00 [Information] Sending file. Request path: '"/images/banner4.svg"'. Physical path: '"D:\Project\git\MySql\EmptyWebApp\wwwroot\images\banner4.svg"'
+2017-11-16 16:51:20.183 +08:00 [Information] Sending file. Request path: '"/images/banner3.svg"'. Physical path: '"D:\Project\git\MySql\EmptyWebApp\wwwroot\images\banner3.svg"'
+2017-11-16 16:51:20.157 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/images/banner2.svg  
+2017-11-16 16:51:20.182 +08:00 [Information] Sending file. Request path: '"/images/banner1.svg"'. Physical path: '"D:\Project\git\MySql\EmptyWebApp\wwwroot\images\banner1.svg"'
+2017-11-16 16:51:20.191 +08:00 [Information] Sending file. Request path: '"/images/banner2.svg"'. Physical path: '"D:\Project\git\MySql\EmptyWebApp\wwwroot\images\banner2.svg"'
+2017-11-16 16:51:20.221 +08:00 [Information] Request finished in 62.3801ms 200 image/svg+xml
+2017-11-16 16:51:20.221 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2  
+2017-11-16 16:51:20.240 +08:00 [Information] Request finished in 83.4551ms 200 image/svg+xml
+2017-11-16 16:51:20.221 +08:00 [Information] Request finished in 62.3588ms 200 image/svg+xml
+2017-11-16 16:51:20.240 +08:00 [Information] Request finished in 83.3295ms 200 image/svg+xml
+2017-11-16 16:51:20.241 +08:00 [Information] The file "/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" was not modified
+2017-11-16 16:51:20.300 +08:00 [Information] Request finished in 79.2959ms 304 font/woff2

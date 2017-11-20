@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.27004.2006
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gomo.CC.Model", "Gomo.CC.Model\Gomo.CC.Model.csproj", "{BA8DEB98-288B-4162-9C20-462F7A89DE23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{FE42D52C-DDEA-425D-B56C-68110819180C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{FE42D52C-DDEA-425D-B56C-68110819180C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmptyWebApp", "EmptyWebApp\EmptyWebApp.csproj", "{92122A69-7D7A-49EA-8C8B-6C4531D0F885}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{FE42D52C-DDEA-425D-B56C-68110819180C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE42D52C-DDEA-425D-B56C-68110819180C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE42D52C-DDEA-425D-B56C-68110819180C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92122A69-7D7A-49EA-8C8B-6C4531D0F885}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92122A69-7D7A-49EA-8C8B-6C4531D0F885}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92122A69-7D7A-49EA-8C8B-6C4531D0F885}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92122A69-7D7A-49EA-8C8B-6C4531D0F885}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
