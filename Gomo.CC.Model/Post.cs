@@ -5,7 +5,8 @@ namespace Gomo.CC.Model
 {
     public partial class Post
     {
-        public int PostId { get; set; }
+        public long PostId { get; set; }
         public string Content { get; set; }
+        public string Title { get; set; }
     }
 }
