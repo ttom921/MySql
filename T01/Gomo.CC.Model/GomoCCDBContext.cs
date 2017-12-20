@@ -22,31 +22,26 @@ namespace Gomo.CC.Model
         {
             modelBuilder.Entity<Blog>(entity =>
             {
-                entity.Property(e => e.BlogId).HasColumnType("bigint(20)");
+                entity.Property(e => e.BlogId).HasColumnType("int(11)");
 
-                entity.Property(e => e.MyBlodId)
-                    .HasColumnName("MyBlodID")
-                    .HasColumnType("int(11)");
+                entity.Property(e => e.MyBlodId).HasColumnType("int(11)");
 
                 entity.Property(e => e.Url)
                     .IsRequired()
-                    .HasMaxLength(10)
-                    .HasDefaultValueSql("'0'");
+                    .HasMaxLength(50);
             });
 
             modelBuilder.Entity<Post>(entity =>
             {
-                entity.Property(e => e.PostId).HasColumnType("bigint(20)");
+                entity.Property(e => e.PostId).HasColumnType("int(11)");
 
                 entity.Property(e => e.Content)
                     .IsRequired()
-                    .HasMaxLength(50)
-                    .HasDefaultValueSql("'0'");
+                    .HasMaxLength(50);
 
                 entity.Property(e => e.Title)
                     .IsRequired()
-                    .HasMaxLength(50)
-                    .HasDefaultValueSql("'0'");
+                    .HasMaxLength(50);
             });
         }
     }
